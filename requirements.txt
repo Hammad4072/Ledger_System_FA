@@ -1,9 +1,6 @@
 fastapi
 uvicorn
-<<<<<<< HEAD
-sqlalchemy==2.0.30
-pydantic==2.7.1
-=======
 sqlalchemy
 pydantic
->>>>>>> 4ff6aafc5e8b1d7c5d48de3d441b5176c6bc0604
+python-jose
+passlib
