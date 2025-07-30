@@ -1,0 +1,25 @@
+repos:
+  # Format Python code using black (PEP8 compliant)
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  # Lint Python code (for errors, unused imports, etc.)
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-bugbear, flake8-comprehensions]
+
+  # Clean up trailing spaces, fix final newline, check YAML files
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: debug-statements
+
+  #
