@@ -4,7 +4,6 @@
 
 # from .database import SessionLocal, engine
 # from . import models, schemas
-#...
 
 # # Create database tables
 # models.Base.metadata.create_all(bind=engine)
